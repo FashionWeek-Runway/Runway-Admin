@@ -1,0 +1,27 @@
+/* 스타일시트 파일 (예: styles.css) */
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* 하단 마진 추가 */
+}
+
+.tab {
+  flex: 1; /* 탭이 컨테이너 내에서 동일한 공간을 차지하도록 함 */
+  padding: 10px 0; /* 상하 패딩 */
+  cursor: pointer;
+  background-color: #f8f9fa; /* 비활성화된 탭의 배경색 */
+  border: 1px solid #dee2e6;
+  border-bottom: none; /* 활성화된 탭은 하단 테두리가 없음 */
+  outline: none; /* 버튼 클릭 시 나타나는 윤곽선 제거 */
+}
+
+.tab.active {
+  background-color: white; /* 활성화된 탭의 배경색 */
+  border-color: #adb5bd; /* 활성화된 탭의 테두리 색 */
+  font-weight: bold; /* 활성화된 탭의 글씨 굵기 */
+  border-bottom: 2px solid blue; /* 활성화된 탭 하단에 블루 색상 표시 */
+}
+
+.tab:not(:last-child) {
+  margin-right: 2px; /* 탭 간의 간격 */
+}

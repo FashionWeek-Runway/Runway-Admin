@@ -1,0 +1,10 @@
+.idea/*
+.DS_Store
+node_modules/*
+logs/*
+.vscode/*
+package-lock.json
+yarn.lock
+build-dev/*
+build-stage/*
+build/*

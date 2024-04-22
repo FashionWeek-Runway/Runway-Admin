@@ -1,0 +1,3 @@
+interface RequesterBusinessModelAllResponse {
+  businessModels: BusinessModel[]
+}
