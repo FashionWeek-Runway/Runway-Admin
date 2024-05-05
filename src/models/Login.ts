@@ -1,10 +1,10 @@
 type LoginRequest = {
-  email: string
+  phone: string
   password: string
 }
 
 type LoginResponse = {
-  id: number
+  userId: number
   accessToken: string
   refreshToken: string
 }

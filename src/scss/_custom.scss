@@ -1,14 +1,20 @@
 // Here you can add other styles
 
 .btn-primary {
-  background-color: #D15437;
-  border-color: #D15437;
-  color: #ffffff;
+  background-color: #BDFF00;
+  border-color: #BDFF00;
+  color: #000000;
 }
-#D15437 {
+
+.btn-primary:hover {
+  background-color: #0433FF; /* 호버 시 배경색 변경 */
+  border-color: #0433FF; /* 호버 시 테두리색 변경 */
+}
+
+#BDFF00 {
   /* 색상 속성 설정 */
-  background-color: #D15437;
-  border-color: #D15437;
+  background-color: #BDFF00;
+  border-color: #BDFF00;
   color: #ffffff; /* 텍스트 색상을 흰색 또는 다른 적절한 색상으로 설정하세요. */
 }
 table {
@@ -44,7 +50,7 @@ th.large {
 }
 
 .tab-color{
-  background-color : #D15437
+  background-color : #BDFF00
 }
 
 /* custom.css */
@@ -57,7 +63,7 @@ th.large {
 
 .c-nav-tabs .nav-item .nav-link.active {
   color: white !important;
-  background-color: #D15437 !important; /* 활성 탭 배경색 */
+  background-color: #BDFF00 !important; /* 활성 탭 배경색 */
 }
 
 .c-nav-tabs .nav-item .nav-link:not(.active) {

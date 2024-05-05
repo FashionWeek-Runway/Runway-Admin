@@ -5,7 +5,7 @@ import {CImage, CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler} from '@co
 import {SidebarNav} from '../SidebarNav'
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
-import {ReactComponent as Logo} from '../../assets/main-logo (1).svg'
+import {ReactComponent as Logo} from '../../assets/main-logo.svg'
 
 // sidebar nav config
 import navigation from '../../_nav'

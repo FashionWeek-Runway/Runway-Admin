@@ -56,8 +56,8 @@ export const CustomButton = styled.button`
     background: #321fdb;
     border: 1px solid #321fdb;
     &:hover {
-      background: #5141e0;
-      border: 1px solid #5141e0;
+      background: #0433ff;
+      border: 1px solid #0433ff;
     }
   }
 `

@@ -21,7 +21,7 @@ import {login} from '../../apis/login'
 const Login = () => {
   const navigate = useNavigate()
 
-  const [email, setId] = useState('')
+  const [phone, setId] = useState('')
   const [password, setPassword] = useState('')
 
   const onKeyPress = (event: {key: string}) => {
@@ -32,7 +32,7 @@ const Login = () => {
 
   const handleSubmit = async () => {
     try {
-      if (!email) {
+      if (!phone) {
         alert('email 입력해 주세요.')
         return
       }
@@ -42,7 +42,7 @@ const Login = () => {
         return
       }
 
-      const response = await login<LoginResponse>({email, password})
+      const response = await login<LoginResponse>({phone, password})
       window.localStorage.setItem('jwt', response.accessToken)
 
       navigate(`/dashboard`)
@@ -60,7 +60,7 @@ const Login = () => {
               <CCard className='p-4'>
                 <CCardBody>
                   <CForm>
-                    <h2 className='mb-4'>MATCH 관리자 로그인</h2>
+                    <h2 className='mb-4'>런웨이 관리자 로그인</h2>
                     <CInputGroup className='mb-3'>
                       <CInputGroupText>
                         <CIcon icon={cilUser} />
@@ -91,7 +91,7 @@ const Login = () => {
                       <CFormFeedback invalid>비밀번호를 올바르게 입력해주세요.</CFormFeedback>
                     </CInputGroup>
                     <div className='d-grid'>
-                      <CButton color='primary' onClick={handleSubmit}>
+                      <CButton className={'.btn-primary'} onClick={handleSubmit}>
                         로그인
                       </CButton>
                     </div>

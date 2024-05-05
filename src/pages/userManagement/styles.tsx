@@ -28,8 +28,8 @@ export const CustomButton = styled.button`
 
   &.selected {
     color: rgba(255, 255, 255, 0.87);
-    background: #d15437;
-    border: 1px solid #d15437;
+    background: #BDFF00;
+    border: 1px solid #BDFF00;
     &:hover {
       background: #dc8286;
       border: 1px solid #dc8286;
